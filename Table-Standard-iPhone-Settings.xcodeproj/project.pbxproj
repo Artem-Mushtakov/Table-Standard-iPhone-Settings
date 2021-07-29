@@ -13,6 +13,7 @@
 		ACD606DD26B34CF100DF0668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD606DC26B34CF100DF0668 /* Assets.xcassets */; };
 		ACD606E926B34E9E00DF0668 /* BasicClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD606E826B34E9E00DF0668 /* BasicClass.swift */; };
 		ACD606EB26B3519800DF0668 /* CellTableSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD606EA26B3519800DF0668 /* CellTableSwitch.swift */; };
+		ACD606ED26B3525700DF0668 /* CellTableRightLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD606EC26B3525700DF0668 /* CellTableRightLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		ACD606E126B34CF100DF0668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACD606E826B34E9E00DF0668 /* BasicClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicClass.swift; sourceTree = "<group>"; };
 		ACD606EA26B3519800DF0668 /* CellTableSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTableSwitch.swift; sourceTree = "<group>"; };
+		ACD606EC26B3525700DF0668 /* CellTableRightLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTableRightLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			children = (
 				ACD606E826B34E9E00DF0668 /* BasicClass.swift */,
 				ACD606EA26B3519800DF0668 /* CellTableSwitch.swift */,
+				ACD606EC26B3525700DF0668 /* CellTableRightLabel.swift */,
 			);
 			path = "Cell class";
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			files = (
 				ACD606D826B34CEE00DF0668 /* ViewController.swift in Sources */,
 				ACD606D426B34CEE00DF0668 /* AppDelegate.swift in Sources */,
+				ACD606ED26B3525700DF0668 /* CellTableRightLabel.swift in Sources */,
 				ACD606EB26B3519800DF0668 /* CellTableSwitch.swift in Sources */,
 				ACD606D626B34CEE00DF0668 /* SceneDelegate.swift in Sources */,
 				ACD606E926B34E9E00DF0668 /* BasicClass.swift in Sources */,
