@@ -1,8 +1,8 @@
 //
-//  ViewController.swift
+//  BasicCell.swift
 //  Table-Standard-iPhone-Settings
 //
-//  Created by Артем on 30.07.2021.
+//  Created by Артем on 24.07.2021.
 //
 
 import UIKit
