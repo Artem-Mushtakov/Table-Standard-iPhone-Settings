@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Table-Settings
+//  Table-Standard-iPhone-Settings
 //
 //  Created by Артем on 23.07.2021.
 //
