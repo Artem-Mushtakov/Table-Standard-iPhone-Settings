@@ -11,6 +11,7 @@
 		ACD606D626B34CEE00DF0668 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD606D526B34CEE00DF0668 /* SceneDelegate.swift */; };
 		ACD606D826B34CEE00DF0668 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD606D726B34CEE00DF0668 /* ViewController.swift */; };
 		ACD606DD26B34CF100DF0668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD606DC26B34CF100DF0668 /* Assets.xcassets */; };
+		ACD606E926B34E9E00DF0668 /* BasicClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD606E826B34E9E00DF0668 /* BasicClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		ACD606D726B34CEE00DF0668 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ACD606DC26B34CF100DF0668 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACD606E126B34CF100DF0668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACD606E826B34E9E00DF0668 /* BasicClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		ACD606D226B34CEE00DF0668 /* Table-Standard-iPhone-Settings */ = {
 			isa = PBXGroup;
 			children = (
+				ACD606E726B34E8500DF0668 /* Cell class */,
 				ACD606D326B34CEE00DF0668 /* AppDelegate.swift */,
 				ACD606D526B34CEE00DF0668 /* SceneDelegate.swift */,
 				ACD606D726B34CEE00DF0668 /* ViewController.swift */,
@@ -59,6 +62,14 @@
 				ACD606E126B34CF100DF0668 /* Info.plist */,
 			);
 			path = "Table-Standard-iPhone-Settings";
+			sourceTree = "<group>";
+		};
+		ACD606E726B34E8500DF0668 /* Cell class */ = {
+			isa = PBXGroup;
+			children = (
+				ACD606E826B34E9E00DF0668 /* BasicClass.swift */,
+			);
+			path = "Cell class";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +143,7 @@
 				ACD606D826B34CEE00DF0668 /* ViewController.swift in Sources */,
 				ACD606D426B34CEE00DF0668 /* AppDelegate.swift in Sources */,
 				ACD606D626B34CEE00DF0668 /* SceneDelegate.swift in Sources */,
+				ACD606E926B34E9E00DF0668 /* BasicClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
