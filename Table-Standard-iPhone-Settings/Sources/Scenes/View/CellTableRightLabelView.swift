@@ -9,6 +9,8 @@ import UIKit
 
 class CellTableRightLabelView: BasicCellView {
     
+    // MARK: - Initial
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupHierarchy()
@@ -23,7 +25,7 @@ class CellTableRightLabelView: BasicCellView {
 
     lazy var rightLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 17)
+        label.font = Metric.labelFont
         label.textAlignment = NSTextAlignment.right
         
         return label
@@ -41,8 +43,17 @@ class CellTableRightLabelView: BasicCellView {
         
         NSLayoutConstraint.activate([
             rightLabel.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor),
-            rightLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -40)
+            rightLabel.rightAnchor.constraint(equalTo: rightAnchor, constant:
+                                                Metric.rightLabelRightAnchorConstant)
         ])
     }
+}
+
+extension CellTableRightLabelView {
     
+    enum Metric {
+        
+        static let labelFont: UIFont = .systemFont(ofSize: 17)
+        static let rightLabelRightAnchorConstant: CGFloat = -40
+    }
 }

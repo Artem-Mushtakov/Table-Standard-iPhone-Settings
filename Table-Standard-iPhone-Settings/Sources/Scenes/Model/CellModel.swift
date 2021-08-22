@@ -31,7 +31,7 @@ final class CellModel {
                               Cell(
                                 type: .basicCell,
                                 image: UIImage(named: "personalhotspot")?.withTintColor(.green, renderingMode: .alwaysOriginal) ?? .add,
-                                title: "Режим модема"),],
+                                title: "Режим модема")],
                  "Section1": [Cell(
                                 type: .basicCell,
                                 image: UIImage(systemName: "dot.square.fill")?.withTintColor(.red, renderingMode: .alwaysOriginal) ?? .add,

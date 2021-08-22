@@ -9,6 +9,8 @@ import UIKit
 
 class BasicCellView: UITableViewCell {
     
+    // MARK: - Initial
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupHierarchy()
@@ -35,7 +37,7 @@ class BasicCellView: UITableViewCell {
     lazy var actionRightImage: UIImageView = {
         let image = UIImageView()
         image.image = UIImage(imageLiteralResourceName: "moreThan")
-    
+        
         return image
     } ()
     
@@ -56,17 +58,41 @@ class BasicCellView: UITableViewCell {
         NSLayoutConstraint.activate([
             titleLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
             titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
-            titleLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 60),
+            titleLabel.leftAnchor.constraint(equalTo: leftAnchor, constant:
+                                                Metric.titleLabelLeftAnchorConstant),
             
             iconImage.centerYAnchor.constraint(equalTo: centerYAnchor),
-            iconImage.leftAnchor.constraint(equalTo: leftAnchor, constant: 15),
-            iconImage.widthAnchor.constraint(equalToConstant: 28),
-            iconImage.heightAnchor.constraint(equalToConstant: 28),
+            iconImage.leftAnchor.constraint(equalTo: leftAnchor, constant:
+                                                Metric.iconImageLeftAnchorConstant),
+            iconImage.widthAnchor.constraint(equalToConstant:
+                                                Metric.iconImageWidthAnchorConstant),
+            iconImage.heightAnchor.constraint(equalToConstant:
+                                                Metric.iconImageHeightAnchorConstant),
             
             actionRightImage.centerYAnchor.constraint(equalTo: centerYAnchor),
-            actionRightImage.rightAnchor.constraint(equalTo: rightAnchor, constant: -20),
-            actionRightImage.widthAnchor.constraint(equalToConstant: 6),
-            actionRightImage.heightAnchor.constraint(equalToConstant: 10)
+            actionRightImage.rightAnchor.constraint(equalTo: rightAnchor, constant:
+                                                        Metric.actionRightImageRightAnchorConstant),
+            actionRightImage.widthAnchor.constraint(equalToConstant:
+                                                        Metric.actionRightImageWidthAnchorConstant),
+            actionRightImage.heightAnchor.constraint(equalToConstant:
+                                                        Metric.actionRightImageHeightAnchorConstant)
         ])
+    }
+}
+
+extension BasicCellView {
+    
+    enum Metric {
+        static let labelFont: UIFont = .systemFont(ofSize: 17)
+        
+        static var titleLabelLeftAnchorConstant: CGFloat = 60
+        
+        static var iconImageLeftAnchorConstant: CGFloat = 15
+        static var iconImageWidthAnchorConstant: CGFloat = 28
+        static var iconImageHeightAnchorConstant: CGFloat = 28
+        
+        static var actionRightImageRightAnchorConstant: CGFloat = -20
+        static var actionRightImageWidthAnchorConstant: CGFloat = 6
+        static var actionRightImageHeightAnchorConstant: CGFloat = 10
     }
 }

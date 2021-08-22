@@ -103,7 +103,6 @@
 				ACF87D3126D032A2004BEA1B /* Controller */,
 				ACF87D3326D032B6004BEA1B /* Model */,
 				ACF87D3426D032C0004BEA1B /* View */,
-				ACF87D3226D032AD004BEA1B /* Extensions */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -114,13 +113,6 @@
 				ACD606D726B34CEE00DF0668 /* ViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		ACF87D3226D032AD004BEA1B /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		ACF87D3326D032B6004BEA1B /* Model */ = {
