@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CellTableRightLabel: BasicCell {
+class CellTableRightLabelView: BasicCellView {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BasicCell: UITableViewCell {
+class BasicCellView: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -69,5 +69,4 @@ class BasicCell: UITableViewCell {
             actionRightImage.heightAnchor.constraint(equalToConstant: 10)
         ])
     }
-    
 }

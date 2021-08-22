@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CellTableSwitch: BasicCell {
+class CellTableSwitchView: BasicCellView {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
