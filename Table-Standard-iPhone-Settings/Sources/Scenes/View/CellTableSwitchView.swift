@@ -7,7 +7,9 @@
 
 import UIKit
 
-class CellTableSwitch: BasicCell {
+class CellTableSwitchView: BasicCellView {
+    
+    // MARK: - Initial
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -40,11 +42,19 @@ class CellTableSwitch: BasicCell {
         
         NSLayoutConstraint.activate([
             buttonSwitch.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor),
-            buttonSwitch.rightAnchor.constraint(equalTo: rightAnchor, constant: -20)
+            buttonSwitch.rightAnchor.constraint(equalTo: rightAnchor, constant:
+                                                    Metric.buttonSwitchRightAnchorConstant)
         ])
     }
     
     @objc func setupSwitchAction(mySwitch: UISwitch) {
         print("Активирован UISwitch: Ячейка Авиарежим")
+    }
+}
+
+extension CellTableSwitchView {
+    
+    enum Metric {
+        static let buttonSwitchRightAnchorConstant: CGFloat = -20
     }
 }

@@ -11,9 +11,12 @@
 		ACD606D626B34CEE00DF0668 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD606D526B34CEE00DF0668 /* SceneDelegate.swift */; };
 		ACD606D826B34CEE00DF0668 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD606D726B34CEE00DF0668 /* ViewController.swift */; };
 		ACD606DD26B34CF100DF0668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD606DC26B34CF100DF0668 /* Assets.xcassets */; };
-		ACD606E926B34E9E00DF0668 /* BasicClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD606E826B34E9E00DF0668 /* BasicClass.swift */; };
-		ACD606EB26B3519800DF0668 /* CellTableSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD606EA26B3519800DF0668 /* CellTableSwitch.swift */; };
-		ACD606ED26B3525700DF0668 /* CellTableRightLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD606EC26B3525700DF0668 /* CellTableRightLabel.swift */; };
+		ACD606E926B34E9E00DF0668 /* BasicClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD606E826B34E9E00DF0668 /* BasicClassView.swift */; };
+		ACD606EB26B3519800DF0668 /* CellTableSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD606EA26B3519800DF0668 /* CellTableSwitchView.swift */; };
+		ACD606ED26B3525700DF0668 /* CellTableRightLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD606EC26B3525700DF0668 /* CellTableRightLabelView.swift */; };
+		ACF87D3626D032EE004BEA1B /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF87D3526D032EE004BEA1B /* Cell.swift */; };
+		ACF87D3A26D16FA1004BEA1B /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF87D3926D16FA1004BEA1B /* CellModel.swift */; };
+		ACF87D4026D27713004BEA1B /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF87D3F26D27713004BEA1B /* CellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,9 +26,12 @@
 		ACD606D726B34CEE00DF0668 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ACD606DC26B34CF100DF0668 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACD606E126B34CF100DF0668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACD606E826B34E9E00DF0668 /* BasicClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicClass.swift; sourceTree = "<group>"; };
-		ACD606EA26B3519800DF0668 /* CellTableSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTableSwitch.swift; sourceTree = "<group>"; };
-		ACD606EC26B3525700DF0668 /* CellTableRightLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTableRightLabel.swift; sourceTree = "<group>"; };
+		ACD606E826B34E9E00DF0668 /* BasicClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicClassView.swift; sourceTree = "<group>"; };
+		ACD606EA26B3519800DF0668 /* CellTableSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTableSwitchView.swift; sourceTree = "<group>"; };
+		ACD606EC26B3525700DF0668 /* CellTableRightLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTableRightLabelView.swift; sourceTree = "<group>"; };
+		ACF87D3526D032EE004BEA1B /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		ACF87D3926D16FA1004BEA1B /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
+		ACF87D3F26D27713004BEA1B /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,24 +64,75 @@
 		ACD606D226B34CEE00DF0668 /* Table-Standard-iPhone-Settings */ = {
 			isa = PBXGroup;
 			children = (
-				ACD606E726B34E8500DF0668 /* Cell class */,
-				ACD606D326B34CEE00DF0668 /* AppDelegate.swift */,
-				ACD606D526B34CEE00DF0668 /* SceneDelegate.swift */,
-				ACD606D726B34CEE00DF0668 /* ViewController.swift */,
-				ACD606DC26B34CF100DF0668 /* Assets.xcassets */,
-				ACD606E126B34CF100DF0668 /* Info.plist */,
+				ACF87D2E26D031F0004BEA1B /* Sources */,
+				ACF87D2D26D031E6004BEA1B /* Resources */,
 			);
 			path = "Table-Standard-iPhone-Settings";
 			sourceTree = "<group>";
 		};
-		ACD606E726B34E8500DF0668 /* Cell class */ = {
+		ACF87D2D26D031E6004BEA1B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				ACD606E826B34E9E00DF0668 /* BasicClass.swift */,
-				ACD606EA26B3519800DF0668 /* CellTableSwitch.swift */,
-				ACD606EC26B3525700DF0668 /* CellTableRightLabel.swift */,
+				ACD606DC26B34CF100DF0668 /* Assets.xcassets */,
+				ACD606E126B34CF100DF0668 /* Info.plist */,
 			);
-			path = "Cell class";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ACF87D2E26D031F0004BEA1B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				ACF87D2F26D03262004BEA1B /* App */,
+				ACF87D3026D03267004BEA1B /* Scenes */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		ACF87D2F26D03262004BEA1B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				ACD606D326B34CEE00DF0668 /* AppDelegate.swift */,
+				ACD606D526B34CEE00DF0668 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ACF87D3026D03267004BEA1B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				ACF87D3126D032A2004BEA1B /* Controller */,
+				ACF87D3326D032B6004BEA1B /* Model */,
+				ACF87D3426D032C0004BEA1B /* View */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		ACF87D3126D032A2004BEA1B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ACD606D726B34CEE00DF0668 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ACF87D3326D032B6004BEA1B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ACF87D3926D16FA1004BEA1B /* CellModel.swift */,
+				ACF87D3526D032EE004BEA1B /* Cell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ACF87D3426D032C0004BEA1B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ACF87D3F26D27713004BEA1B /* CellView.swift */,
+				ACD606E826B34E9E00DF0668 /* BasicClassView.swift */,
+				ACD606EA26B3519800DF0668 /* CellTableSwitchView.swift */,
+				ACD606EC26B3525700DF0668 /* CellTableRightLabelView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,10 +205,13 @@
 			files = (
 				ACD606D826B34CEE00DF0668 /* ViewController.swift in Sources */,
 				ACD606D426B34CEE00DF0668 /* AppDelegate.swift in Sources */,
-				ACD606ED26B3525700DF0668 /* CellTableRightLabel.swift in Sources */,
-				ACD606EB26B3519800DF0668 /* CellTableSwitch.swift in Sources */,
+				ACD606ED26B3525700DF0668 /* CellTableRightLabelView.swift in Sources */,
+				ACF87D3A26D16FA1004BEA1B /* CellModel.swift in Sources */,
+				ACD606EB26B3519800DF0668 /* CellTableSwitchView.swift in Sources */,
+				ACF87D3626D032EE004BEA1B /* Cell.swift in Sources */,
 				ACD606D626B34CEE00DF0668 /* SceneDelegate.swift in Sources */,
-				ACD606E926B34E9E00DF0668 /* BasicClass.swift in Sources */,
+				ACD606E926B34E9E00DF0668 /* BasicClassView.swift in Sources */,
+				ACF87D4026D27713004BEA1B /* CellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +341,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8F65V3YM64;
-				INFOPLIST_FILE = "Table-Standard-iPhone-Settings/Info.plist";
+				INFOPLIST_FILE = "Table-Standard-iPhone-Settings/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +360,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8F65V3YM64;
-				INFOPLIST_FILE = "Table-Standard-iPhone-Settings/Info.plist";
+				INFOPLIST_FILE = "Table-Standard-iPhone-Settings/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
